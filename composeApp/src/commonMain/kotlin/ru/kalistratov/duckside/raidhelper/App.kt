@@ -11,14 +11,17 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
-import ru.kalistratov.duckside.raidhelper.theme.AppTheme
-import ru.kalistratov.duckside.raidhelper.theme.LocalThemeIsDark
+import coil3.ImageLoader
+import coil3.PlatformContext
+import coil3.request.crossfade
+import coil3.util.DebugLogger
 import org.jetbrains.compose.resources.Font
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.IndieFlower_Regular
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.Res
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.cyclone
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ggg
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ic_cyclone
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ic_dark_mode
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ic_light_mode
@@ -27,6 +30,8 @@ import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.open_gi
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.run
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.stop
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.theme
+import ru.kalistratov.duckside.raidhelper.theme.AppTheme
+import ru.kalistratov.duckside.raidhelper.theme.LocalThemeIsDark
 
 @Composable
 internal fun App() = AppTheme {
@@ -101,5 +106,12 @@ internal fun App() = AppTheme {
         }
     }
 }
+
+fun getAsyncImageLoader(context: PlatformContext) = ImageLoader
+    .Builder(context)
+    .crossfade(true)
+    .logger(DebugLogger())
+    .build()
+
 
 internal expect fun openUrl(url: String?)
