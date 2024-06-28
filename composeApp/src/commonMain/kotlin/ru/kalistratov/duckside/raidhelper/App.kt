@@ -11,12 +11,22 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
-import duckside_raid_helper.composeapp.generated.resources.*
 import ru.kalistratov.duckside.raidhelper.theme.AppTheme
 import ru.kalistratov.duckside.raidhelper.theme.LocalThemeIsDark
 import org.jetbrains.compose.resources.Font
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.IndieFlower_Regular
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.Res
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.cyclone
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ic_cyclone
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ic_dark_mode
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ic_light_mode
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.ic_rotate_right
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.open_github
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.run
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.stop
+import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.theme
 
 @Composable
 internal fun App() = AppTheme {
