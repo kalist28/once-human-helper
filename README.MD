@@ -1,4 +1,5 @@
-# Compose Multiplatform Application
+# DuckSide Raid helper
+## Compose Multiplatform Application
 
 ## Before running!
  - check your system with [KDoctor](https://github.com/Kotlin/kdoctor)
