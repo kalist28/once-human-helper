@@ -13,13 +13,20 @@ plugins {
     alias(libs.plugins.kotlinx.serialization)
 }
 
+val _group = findProperty("group") as String
+val _jvmTarget = findProperty("jvmTarget") as String
+
+val _minSdk = (findProperty("android.minSdk") as String).toInt()
+val _targetSdk = (findProperty("android.targetSdk") as String).toInt()
+val _compileSdk = (findProperty("android.compileSdk") as String).toInt()
+
 kotlin {
     androidTarget {
         compilations.all {
             compileTaskProvider {
                 compilerOptions {
-                    jvmTarget.set(JvmTarget.JVM_1_8)
-                    freeCompilerArgs.add("-Xjdk-release=${JavaVersion.VERSION_1_8}")
+                    jvmTarget.set(JvmTarget.fromTarget(_jvmTarget))
+                    freeCompilerArgs.add("-Xjdk-release=${JavaVersion.toVersion(_jvmTarget)}")
                 }
             }
         }
@@ -91,8 +98,8 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 24
-        targetSdk = 34
+        minSdk = _minSdk
+        targetSdk = _targetSdk
 
         applicationId = "ru.kalistratov.duckside.raidhelper.androidApp"
         versionCode = 1
@@ -116,8 +123,9 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        val version = JavaVersion.toVersion(_jvmTarget)
+        sourceCompatibility = version
+        targetCompatibility = version
     }
     buildFeatures {
         //enables a Compose tooling support in the AndroidStudio

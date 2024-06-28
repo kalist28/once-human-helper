@@ -4,6 +4,12 @@
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
+val _group = findProperty("group") as String
+val _jvmTarget = findProperty("jvmTarget") as String
+
+val _minSdk = (findProperty("android.minSdk") as String).toInt()
+val _compileSdk = (findProperty("android.compileSdk") as String).toInt()
+
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose.compiler).apply(false)
@@ -13,12 +19,6 @@ plugins {
     alias(libs.plugins.buildConfig).apply(false)
     alias(libs.plugins.kotlinx.serialization).apply(false)
 }
-
-val _group = findProperty("group") as String
-val _jvmTarget = findProperty("jvmTarget") as String
-
-val _minSdk = (findProperty("android.minSdk") as String).toInt()
-val _compileSdk = (findProperty("android.compileSdk") as String).toInt()
 
 subprojects {
     val libs = listOf("domain")
