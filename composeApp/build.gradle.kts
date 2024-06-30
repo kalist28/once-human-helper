@@ -71,6 +71,8 @@ kotlin {
             implementation(libs.multiplatformSettings)
             implementation(libs.koin.core)
             implementation(libs.kstore)
+            implementation(libs.decompose)
+            implementation(libs.decompose.compose)
         }
 
         commonTest.dependencies {
