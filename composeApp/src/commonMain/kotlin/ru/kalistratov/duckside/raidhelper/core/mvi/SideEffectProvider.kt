@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.core
+package ru.kalistratov.duckside.raidhelper.core.mvi
 
 import androidx.compose.runtime.Immutable
 import kotlinx.coroutines.flow.Flow

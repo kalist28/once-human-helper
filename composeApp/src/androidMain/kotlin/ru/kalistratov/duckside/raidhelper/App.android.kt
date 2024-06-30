@@ -7,6 +7,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.arkivanov.decompose.defaultComponentContext
+import ru.kalistratov.duckside.raidhelper.core.app.RootComponentImpl
 
 class AndroidApp : Application() {
     companion object {
@@ -20,10 +22,13 @@ class AndroidApp : Application() {
 }
 
 class AppActivity : ComponentActivity() {
+    private val context by lazy { defaultComponentContext() }
+    private val component by lazy { RootComponentImpl(context) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent { App() }
+        setContent { App(component) }
     }
 }
 

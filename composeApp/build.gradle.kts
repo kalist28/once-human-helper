@@ -73,6 +73,8 @@ kotlin {
             implementation(libs.kstore)
             implementation(libs.decompose)
             implementation(libs.decompose.compose)
+
+            implementation(libs.cupertino.decompose)
         }
 
         commonTest.dependencies {

@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.core
+package ru.kalistratov.duckside.raidhelper.core.mvi
 
 interface BaseIntent
 interface BaseAction
