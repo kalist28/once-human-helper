@@ -2,8 +2,7 @@ package ru.kalistratov.duckside.raidhelper.core.app.factory
 
 import com.arkivanov.decompose.router.stack.StackNavigation
 import ru.kalistratov.duckside.raidhelper.core.app.entity.ScreenConfig
-import ru.kalistratov.duckside.raidhelper.screen.main.MainComponent
-import ru.kalistratov.duckside.raidhelper.screen.main.MainRouterImpl
+import ru.kalistratov.oh.helper.screen.main.MainRouterImpl
 
 interface AppRouterFactory {
     fun create(screenConfig: ScreenConfig): Any

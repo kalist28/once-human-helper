@@ -106,7 +106,7 @@ android {
         minSdk = _minSdk
         targetSdk = _targetSdk
 
-        applicationId = "ru.kalistratov.duckside.raidhelper.androidApp"
+        applicationId = "ru.kalistratov.oh.helper.androidApp"
         versionCode = 1
         versionName = "1.0.0"
 

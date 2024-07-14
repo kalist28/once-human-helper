@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.screen.main
+package ru.kalistratov.oh.helper.screen.main
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.animateFloat
@@ -45,7 +45,7 @@ import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.run
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.stop
 import ru.kalistratov.duckside.raidhelper.composeapp.generated.resources.theme
 import ru.kalistratov.duckside.raidhelper.core.mvi.BaseIntent
-import ru.kalistratov.duckside.raidhelper.theme.LocalThemeIsDark
+import ru.kalistratov.oh.helper.theme.LocalThemeIsDark
 
 sealed interface MainIntent: BaseIntent {
 

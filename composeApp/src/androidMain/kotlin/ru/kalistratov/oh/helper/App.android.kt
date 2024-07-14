@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper
+package ru.kalistratov.oh.helper
 
 import android.app.Application
 import android.content.Intent

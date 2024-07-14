@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.screen.main
+package ru.kalistratov.oh.helper.screen.main
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.Stable

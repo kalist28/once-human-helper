@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper
+package ru.kalistratov.oh.helper
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -9,8 +9,8 @@ import coil3.util.DebugLogger
 import io.github.alexzhirkevich.cupertino.decompose.NativeChildren
 import ru.kalistratov.duckside.raidhelper.core.app.RootComponent
 import ru.kalistratov.duckside.raidhelper.core.app.entity.AppScreen
-import ru.kalistratov.duckside.raidhelper.screen.main.MainScreen
-import ru.kalistratov.duckside.raidhelper.theme.AppTheme
+import ru.kalistratov.oh.helper.screen.main.MainScreen
+import ru.kalistratov.oh.helper.theme.AppTheme
 
 
 @Composable

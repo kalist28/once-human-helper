@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.theme
+package ru.kalistratov.oh.helper.theme
 
 import android.app.Activity
 import androidx.compose.runtime.Composable

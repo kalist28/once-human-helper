@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper
+package ru.kalistratov.oh.helper
 
 import platform.Foundation.NSURL
 import platform.UIKit.UIApplication

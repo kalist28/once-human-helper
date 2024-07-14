@@ -1,4 +1,4 @@
-rootProject.name = "DuckSide-Raid-helper"
+rootProject.name = "OnceHuman-helper"
 include(":composeApp")
 
 pluginManagement {

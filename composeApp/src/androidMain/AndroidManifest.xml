@@ -4,12 +4,12 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name=".AndroidApp"
+        android:name="ru.kalistratov.oh.helper.AndroidApp"
         android:icon="@android:drawable/ic_menu_compass"
         android:label="DuckSide Raid helper"
         android:theme="@android:style/Theme.Material.NoActionBar">
         <activity
-            android:name=".AppActivity"
+            android:name="ru.kalistratov.oh.helper.AppActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:launchMode="singleInstance"
             android:windowSoftInputMode="adjustPan"

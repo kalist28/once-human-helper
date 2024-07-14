@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.theme
+package ru.kalistratov.oh.helper.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
