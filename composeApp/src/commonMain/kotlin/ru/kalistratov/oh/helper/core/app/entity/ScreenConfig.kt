@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.core.app.entity
+package ru.kalistratov.oh.helper.core.app.entity
 
 import kotlinx.serialization.Serializable
 

@@ -12,7 +12,6 @@ val _compileSdk = (findProperty("android.compileSdk") as String).toInt()
 
 plugins {
     alias(libs.plugins.multiplatform)
-    alias(libs.plugins.compose.compiler).apply(false)
     alias(libs.plugins.compose).apply(false)
     alias(libs.plugins.android.library)
     alias(libs.plugins.android.application).apply(false)
@@ -29,8 +28,8 @@ subprojects {
 
     kotlin {
         androidTarget {
-            compilerOptions {
-                jvmTarget = JvmTarget.fromTarget(_jvmTarget)
+            compilations.all {
+                kotlinOptions.jvmTarget = _jvmTarget
             }
         }
 
@@ -67,8 +66,8 @@ subprojects {
 
 kotlin {
     androidTarget {
-        compilerOptions {
-            jvmTarget = JvmTarget.fromTarget(_jvmTarget)
+        compilations.all {
+            kotlinOptions.jvmTarget = _jvmTarget
         }
     }
 }

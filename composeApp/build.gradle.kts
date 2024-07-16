@@ -6,7 +6,6 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSetTree
 
 plugins {
     alias(libs.plugins.multiplatform)
-    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.compose)
     alias(libs.plugins.android.application)
     alias(libs.plugins.buildConfig)
@@ -48,7 +47,10 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "ComposeApp"
-            isStatic = true
+            isStatic = false
+
+            export(libs.decompose)
+            export(libs.essenty)
         }
     }
 
@@ -64,17 +66,25 @@ kotlin {
             implementation(libs.coil.network.ktor)
             implementation(libs.napier)
             implementation(libs.kotlinx.coroutines.core)
+
             implementation(libs.ktor.core)
+            implementation(libs.ktor.serialization)
+            implementation(libs.ktor.serialization.json)
+
             implementation(libs.composeIcons.featherIcons)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.kotlinx.datetime)
             implementation(libs.multiplatformSettings)
             implementation(libs.koin.core)
             implementation(libs.kstore)
-            implementation(libs.decompose)
-            implementation(libs.decompose.compose)
 
+            api(libs.decompose)
+            api(libs.essenty)
+            implementation(libs.decompose.compose)
             implementation(libs.cupertino.decompose)
+
+            implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.3.2")
+            implementation("ovh.plrapps:mapcompose-mp:0.9.3")
         }
 
         commonTest.dependencies {
@@ -88,10 +98,12 @@ kotlin {
             implementation(compose.uiTooling)
             implementation(libs.androidx.activityCompose)
             implementation(libs.kotlinx.coroutines.android)
-            implementation(libs.ktor.client.okhttp)
+            implementation(libs.ktor.negotiation)
+            implementation(libs.ktor.client.cio)
         }
 
         iosMain.dependencies {
+            implementation(libs.ktor.negotiation)
             implementation(libs.ktor.client.darwin)
         }
 
@@ -136,6 +148,8 @@ android {
         //enables a Compose tooling support in the AndroidStudio
         compose = true
     }
+
+    composeOptions.kotlinCompilerExtensionVersion = "1.5.10"
 }
 
 buildConfig {

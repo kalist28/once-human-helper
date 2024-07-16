@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.core.mvi
+package ru.kalistratov.oh.helper.core.mvi
 
 import androidx.compose.runtime.Immutable
 import kotlinx.coroutines.flow.Flow

@@ -1,4 +1,4 @@
-package ru.kalistratov.duckside.raidhelper.core.app
+package ru.kalistratov.oh.helper.core.app
 
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.router.stack.ChildStack
@@ -9,10 +9,10 @@ import com.arkivanov.decompose.router.stack.pop
 import com.arkivanov.decompose.value.Value
 import com.arkivanov.essenty.backhandler.BackDispatcher
 import org.koin.core.component.KoinComponent
-import ru.kalistratov.duckside.raidhelper.core.app.entity.AppScreen
-import ru.kalistratov.duckside.raidhelper.core.app.entity.ScreenConfig
-import ru.kalistratov.duckside.raidhelper.core.app.factory.AppScreenFactory
-import ru.kalistratov.duckside.raidhelper.core.app.factory.AppScreenFactoryImpl
+import ru.kalistratov.oh.helper.core.app.entity.AppScreen
+import ru.kalistratov.oh.helper.core.app.entity.ScreenConfig
+import ru.kalistratov.oh.helper.core.app.factory.AppScreenFactory
+import ru.kalistratov.oh.helper.core.app.factory.AppScreenFactoryImpl
 
 typealias AppNavigation = StackNavigation<ScreenConfig>
 

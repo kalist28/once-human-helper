@@ -7,8 +7,8 @@ import coil3.PlatformContext
 import coil3.request.crossfade
 import coil3.util.DebugLogger
 import io.github.alexzhirkevich.cupertino.decompose.NativeChildren
-import ru.kalistratov.duckside.raidhelper.core.app.RootComponent
-import ru.kalistratov.duckside.raidhelper.core.app.entity.AppScreen
+import ru.kalistratov.oh.helper.core.app.RootComponent
+import ru.kalistratov.oh.helper.core.app.entity.AppScreen
 import ru.kalistratov.oh.helper.screen.main.MainScreen
 import ru.kalistratov.oh.helper.theme.AppTheme
 

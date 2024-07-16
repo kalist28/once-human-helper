@@ -5,8 +5,8 @@
 
     <application
         android:name="ru.kalistratov.oh.helper.AndroidApp"
-        android:icon="@android:drawable/ic_menu_compass"
-        android:label="DuckSide Raid helper"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Once Human Helper"
         android:theme="@android:style/Theme.Material.NoActionBar">
         <activity
             android:name="ru.kalistratov.oh.helper.AppActivity"

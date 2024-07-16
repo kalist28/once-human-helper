@@ -1,9 +1,9 @@
-package ru.kalistratov.duckside.raidhelper.core.app.factory
+package ru.kalistratov.oh.helper.core.app.factory
 
 import com.arkivanov.decompose.ComponentContext
-import ru.kalistratov.duckside.raidhelper.core.app.RootComponent
-import ru.kalistratov.duckside.raidhelper.core.app.entity.AppScreen
-import ru.kalistratov.duckside.raidhelper.core.app.entity.ScreenConfig
+import ru.kalistratov.oh.helper.core.app.RootComponent
+import ru.kalistratov.oh.helper.core.app.entity.AppScreen
+import ru.kalistratov.oh.helper.core.app.entity.ScreenConfig
 import ru.kalistratov.oh.helper.screen.main.MainComponent
 
 interface AppScreenFactory {

@@ -3,9 +3,9 @@ package ru.kalistratov.oh.helper.screen.main
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.Stable
 import com.arkivanov.decompose.ComponentContext
-import ru.kalistratov.duckside.raidhelper.core.mvi.BaseAction
-import ru.kalistratov.duckside.raidhelper.core.mvi.BaseViewState
-import ru.kalistratov.duckside.raidhelper.core.mvi.ScreenComponent
+import ru.kalistratov.oh.helper.core.mvi.BaseAction
+import ru.kalistratov.oh.helper.core.mvi.BaseViewState
+import ru.kalistratov.oh.helper.core.mvi.ScreenComponent
 
 @Stable
 data class MainScreen(

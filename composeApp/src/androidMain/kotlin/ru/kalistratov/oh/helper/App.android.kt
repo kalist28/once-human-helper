@@ -8,7 +8,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.arkivanov.decompose.defaultComponentContext
-import ru.kalistratov.duckside.raidhelper.core.app.RootComponentImpl
+import ru.kalistratov.oh.helper.core.app.RootComponentImpl
 
 class AndroidApp : Application() {
     companion object {

@@ -1,7 +1,7 @@
-package ru.kalistratov.duckside.raidhelper.core.app.factory
+package ru.kalistratov.oh.helper.core.app.factory
 
 import com.arkivanov.decompose.router.stack.StackNavigation
-import ru.kalistratov.duckside.raidhelper.core.app.entity.ScreenConfig
+import ru.kalistratov.oh.helper.core.app.entity.ScreenConfig
 import ru.kalistratov.oh.helper.screen.main.MainRouterImpl
 
 interface AppRouterFactory {
